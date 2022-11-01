@@ -10,8 +10,8 @@ function ConvertionGrid() {
     <div className="mx-md-5 mt-3">
     <div className='row row-cols-sm-3 row-cols-1 ' >
         { ctx.convertionGrid.length !=0 &&
-            ctx.convertionGrid.map(convertion=>(
-                <div className='col' >
+            ctx.convertionGrid.map((convertion,i)=>(
+                <div className='col'key={i} >
                     <div className="card mb-4 text-center bg-dark text-white pt-2">
                     {convertion}
                         </div> 
@@ -19,8 +19,8 @@ function ConvertionGrid() {
             ))
         }
         { ctx.convertionGrid.length ==0 &&
-            temp.map(convertion=>(
-                <div className='col' >
+            temp.map((convertion,i)=>(
+                <div className='col' key={i} >
                     <div className="card mb-4 text-center bg-dark text-white pt-2">
                     {convertion}
                         </div> 
