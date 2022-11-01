@@ -11,7 +11,7 @@ function Details() {
         let chartData= await getChart(location.state.base,location.state.to)
         if(chartData){
             let ctx = document.getElementById("examChart").getContext("2d");
-        new Chart(ctx, {
+        /* new Chart(ctx, {
             type: 'line',
             options: {
                 legend: {display: false},
@@ -30,7 +30,7 @@ function Details() {
                     data: chartData
                 }]
             }
-        });
+        }); */
         }
         else
             {
