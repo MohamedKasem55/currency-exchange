@@ -2,7 +2,6 @@ import './App.css';
 import React, { useState } from 'react'
 import Nav from './components/nav/nav';
 import Exchanger from './components/exchanger/Exchanger';
-import SelectButton from './components/selectButton/selectButton';
 import ConvertionGrid from './components/convertion-grid/ConvertionGrid';
 import convertionContex from './components/context/convertionContex';
 import { convertionGridFormation } from './services/currency.service';
@@ -23,7 +22,7 @@ function App() {
           onConvertionGridChange: convertionGridHandler
         }}
       >
-        <Router history={history}>
+        <Router >
         <Nav />
         <Exchanger />
         <Routes>
